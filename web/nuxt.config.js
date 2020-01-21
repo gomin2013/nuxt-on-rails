@@ -33,7 +33,12 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    },
+  },
+  watchers: {
+    webpack: {
+      aggregateTimeout: 300,
+      poll: 1000
     }
   }
-}
-
+};
