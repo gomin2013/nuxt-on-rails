@@ -16,6 +16,7 @@ services:
     build:
       context: api
     environment:
+      - RAILS_ENV=development
       - RAILS_MASTER_KEY
     ports:
       - 3000:3000
