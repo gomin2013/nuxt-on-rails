@@ -36,8 +36,13 @@ module.exports = {
     },
   },
   buildModules: [
+    '@nuxtjs/axios',
     '@nuxtjs/vuetify'
   ],
+  axios: {
+    baseURL: 'https://dev.nuxt-on-rails/api',
+    timeout: 1000
+  },
   watchers: {
     webpack: {
       aggregateTimeout: 300,
