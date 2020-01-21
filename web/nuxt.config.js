@@ -35,6 +35,9 @@ module.exports = {
       }
     },
   },
+  buildModules: [
+    '@nuxtjs/vuetify'
+  ],
   watchers: {
     webpack: {
       aggregateTimeout: 300,
