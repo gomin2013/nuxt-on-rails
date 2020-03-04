@@ -109,3 +109,11 @@ export default
 
     signOut: ->
       @$store.dispatch 'auth/signOut'
+      @$store.dispatch 'auth/openSignedOutSnackbar'
+#      console.log('refererRouteName', @refererRouteName)
+#      !@isAuthenticated && @$router.push '/'
+
+  watch:
+    $route: ->
+      @$store.dispatch 'auth/closeSignedInSnackbar'
+      @$store.dispatch 'auth/closeSignedOutSnackbar'
